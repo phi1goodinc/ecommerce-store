@@ -1,0 +1,10 @@
+@import "_fonts.css";
+@import "_reset.css";
+@import "_overall.css";
+
+/*components styles*/
+
+@import "../components/common/Header/Header.module.css";
+@import "../components/common/Footer/Footer.module.scss";
+@import "../components/utils/Slider/Slider.module.css";
+

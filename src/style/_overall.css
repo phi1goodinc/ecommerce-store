@@ -1,0 +1,13 @@
+body {
+    font-size: 15px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.site_container {
+    max-width: 1100px;
+    margin: auto;
+}

@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 45px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.phone_container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-right: 5%;
+  white-space:nowrap;
+}
