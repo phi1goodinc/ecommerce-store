@@ -20,7 +20,7 @@ const NewCollection = () => {
                                 </div>
                             </div>
                             <figcaption>
-                                <h4 className={s.description}>Футболка USA</h4>
+                                <h5 className={s.description}>Футболка USA</h5>
                                 <p className={s.price}>$129</p>
                             </figcaption>
                         </a>
@@ -35,7 +35,7 @@ const NewCollection = () => {
                                 </div>
                             </div>
                             <figcaption>
-                                <h4 className={s.description}>Купальник Glow</h4>
+                                <h5 className={s.description}>Купальник Glow</h5>
                                 <p className={s.price}>$129</p>
                             </figcaption>
                         </a>
@@ -49,7 +49,7 @@ const NewCollection = () => {
                                 </div>
                             </div>
                             <figcaption>
-                                <h4 className={s.description}>Свитшот Sweet Shot</h4>
+                                <h5 className={s.description}>Свитшот Sweet Shot</h5>
                                 <p className={s.price}>$129</p>
                             </figcaption>
                         </a>
