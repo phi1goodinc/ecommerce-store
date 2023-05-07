@@ -1,10 +1,17 @@
 body {
     font-size: 15px;
+    font-family: Raleway-Regular, sans-serif !important;
 }
 
 a {
     color: inherit;
     text-decoration: inherit;
+}
+
+h3 {
+    font-size: 40px;
+    font-family: Raleway-Medium, sans-serif;
+    line-height: 44px;
 }
 
 .site_container {
