@@ -1,0 +1,23 @@
+.slider {
+  margin-top: 190px;
+}
+
+.item {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 55px;
+  line-height: 60px;
+  margin-bottom: 45px;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 28px;
+  max-width: 385px;
+  margin-bottom: 45px;
+  padding-left: 2px;
+}

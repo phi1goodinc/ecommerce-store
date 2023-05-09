@@ -1,0 +1,26 @@
+.slick-slider, .slick-slide {
+    width: 540px;
+}
+
+.slick-dots {
+    position: unset;
+}
+
+.slick-dots li {
+    width: 30px;
+    height: 10px;
+}
+
+.slick-dots li button {
+    background-color: #D1D1D1;
+    width: 30px;
+    height: 10px;
+}
+
+.slick-dots li button:before {
+    content: none;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #000000;
+}

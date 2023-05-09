@@ -8,7 +8,7 @@ import s from './NewCollection.module.css'
 const NewCollection = () => {
     return (
         <>
-            <div className={`${s.newcollection_container} site_container`}>
+            <div className={`${s.newcollection_container} site_container`} id='newcollection'>
                 <h3 className={s.title}>Новая коллекция</h3>
                 <div className={s.offers_container}>
                     <figure className={s.item}>
