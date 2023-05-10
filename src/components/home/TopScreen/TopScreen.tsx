@@ -17,7 +17,7 @@ const TopScreen = () => {
                         <AnchorLink className={s.arrow_btn} href="#newcollection">
                             <img src={arrowDown} alt="button to new collection section"/>
                         </AnchorLink>
-                        <a className={s.store_btn} href="#">
+                        <a className={`${s.store_btn} btn_blue`} href="#">
                             Открыть магазин
                         </a>
                     </div>
@@ -25,7 +25,7 @@ const TopScreen = () => {
                 <section className={s.right}>
                     <div className={s.background}></div>
                     <div>
-                        <img src={modelMain} alt="main model photo"/>
+                        <img src={modelMain} alt="main model"/>
                     </div>
                 </section>
             </div>

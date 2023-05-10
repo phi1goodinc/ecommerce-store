@@ -8,6 +8,15 @@ a {
     text-decoration: inherit;
 }
 
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 h3 {
     font-size: 40px;
     line-height: 44px;
@@ -31,4 +40,12 @@ p {
 .site_container {
     max-width: 1100px;
     margin: auto;
+}
+
+.btn_blue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background-color: #6E9C9F;
 }
