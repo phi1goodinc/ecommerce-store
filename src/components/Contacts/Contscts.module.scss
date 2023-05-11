@@ -1,0 +1,30 @@
+.wrapper {
+  margin-top: 100px;
+  margin-bottom: 130px;
+}
+
+.title {
+  margin-bottom: 100px;
+}
+
+.map_wrapper {
+  height: 475px;
+  margin-bottom: 100px;
+}
+
+.contacts {
+  display: flex;
+  gap: 100px;
+}
+
+.contacts li h5 {
+  margin-bottom: 20px;
+}
+
+.contacts li a, .contacts li p {
+  font-family: Raleway-Medium, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+}
