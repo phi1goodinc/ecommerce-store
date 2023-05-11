@@ -1,0 +1,56 @@
+.about_wrapper {
+  margin-bottom: 130px;
+}
+
+.wrapper {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.left {
+  flex-direction: row-reverse;
+}
+
+.main_title {
+  margin-bottom: 100px;
+}
+
+.title {
+  font-family: Raleway-Medium, sans-serif;
+}
+
+.description {
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.paragraph {
+  font-family: Raleway-Medium,sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+.btn {
+  width: 260px;
+  height: 70px
+}
+
+.btn_wrapper {
+  display: flex;
+  justify-content: center;
+}
