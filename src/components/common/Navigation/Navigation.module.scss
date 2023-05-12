@@ -7,6 +7,28 @@
   gap: 45px;
 }
 
-.nav_item:hover{
-  color: #6E9C9F;
+.nav_item {
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 #6E9C9F;
+    height: 2px;
+    width: 0;
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+  }
+
+  &:hover {
+    color: #6E9C9F;
+    transition: 0.5s ease;
+    &::after {
+      width: 100%;
+      left: 0;
+    }
+  }
 }
