@@ -1,16 +1,17 @@
-import React from 'react'
+import React from "react"
 import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom"
-import Root from "../../Root"
-import Home from "../Home"
-import AboutUs from "../../AboutUs/AboutUs"
-import Contacts from "../../Contacts/Contacts";
+import Root from "components/Root"
+import Home from "components/home/Home"
+import AboutUs from "components/AboutUs/AboutUs"
+import Contacts from "components/Contacts/Contacts"
+import Shop from "components/Shop/Shop"
 
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: '/',
         element: <Root/>,
         children: [
             {
@@ -24,11 +25,15 @@ const router = createBrowserRouter([
             {
                 path:'/contacts',
                 element: <Contacts/>
+            },
+            {
+                path:'/shop',
+                element: <Shop/>
             }
 
         ]
     },
-]);
+])
 
 function Pages() {
     return (
@@ -37,7 +42,7 @@ function Pages() {
                 <RouterProvider router={router} />
             </React.StrictMode>
         </>
-    );
+    )
 }
 
-export default Pages;
+export default Pages

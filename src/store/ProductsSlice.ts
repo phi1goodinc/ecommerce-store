@@ -8,6 +8,8 @@ export interface productState {
     name: string,
     price: number,
     photo: string,
+    category: string,
+    categoryRus: string
 }
 
 const initialState = {
@@ -16,47 +18,66 @@ const initialState = {
             id: 0,
             name: "Футболка USA",
             price: 129,
-            photo: usaTShirt
+            photo: usaTShirt,
+            category: "t-shirts",
+            categoryRus: "Футболки"
         },
         {
             id: 1,
             name: "Купальник Glow",
             price: 129,
-            photo: swimsuitGlow
+            photo: swimsuitGlow,
+            category: "swimming",
+            categoryRus: "Купальники"
         },
         {
             id: 2,
             name: "Свитшот Sweet Shot",
             price: 129,
-            photo: sweetShot
+            photo: sweetShot,
+            category: "sweetShots",
+            categoryRus: "Толстовки"
         },
         {
             id: 3,
             name: "Футболка USA",
             price: 129,
-            photo: usaTShirt
+            photo: usaTShirt,
+            category: "t-shirts",
+            categoryRus: "Футболки"
         },
         {
             id: 4,
             name: "Купальник Glow",
             price: 129,
-            photo: swimsuitGlow
+            photo: swimsuitGlow,
+            category: "swimming",
+            categoryRus: "Купальники"
         },
         {
             id: 5,
             name: "Свитшот Sweet Shot",
             price: 129,
-            photo: sweetShot
+            photo: sweetShot,
+            category: "sweetShots",
+            categoryRus: "Толстовки"
         },
-    ] as Array<productState>
+    ] as Array<productState>,
+    filteredItems: [] as Array<any>
 }
 
 export const productsSlice = createSlice({
     name: 'products',
     initialState,
-    reducers: {}
+    reducers: {
+        filterProducts(state, action) {
+            state.filteredItems = state.items.filter(
+                (item) => item.category === action.payload
+            )
+        },
+    }
 })
 
-export const {} = productsSlice.actions
+export const {filterProducts} = productsSlice.actions
 
 export default productsSlice.reducer
