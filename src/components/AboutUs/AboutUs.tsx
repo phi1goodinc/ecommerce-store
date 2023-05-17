@@ -2,6 +2,7 @@ import React from "react"
 import model1 from "../assets/images/aboutUs/model1.jpg"
 import model2 from "../assets/images/aboutUs/model2.jpg"
 import s from "./AboutUs.module.css"
+import {Link} from "react-router-dom";
 
 const AboutUs = () => {
     return (
@@ -57,7 +58,7 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div className={`${s.btn_wrapper} site_container`}>
-                    <button className={`${s.btn} btn_blue`}>Перейти в магазин</button>
+                    <Link to='/shop' className={`${s.btn} btn_blue`}>Перейти в магазин</Link>
                 </div>
             </div>
         </>

@@ -63,6 +63,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px 50px;
     color: #FFFFFF;
     background-color: #6E9C9F;
 }
