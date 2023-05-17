@@ -181,6 +181,9 @@ export const productsSlice = createSlice({
             )
             state.currentPage = 1
         },
+        getProductById: (state,action: PayloadAction<number>) => {
+            state.filteredItems = state.items.filter((item) => item.id === action.payload)
+        },
         onNavigateNext: (state) => {
             state.currentPage++
         },
@@ -193,6 +196,6 @@ export const productsSlice = createSlice({
     }
 })
 
-export const {filterProducts, onNavigateNext, onNavigatePrev, onPageChange} = productsSlice.actions
+export const {filterProducts, onNavigateNext, onNavigatePrev, onPageChange, getProductById} = productsSlice.actions
 
 export default productsSlice.reducer

@@ -8,6 +8,8 @@ import Home from "components/home/Home"
 import AboutUs from "components/AboutUs/AboutUs"
 import Contacts from "components/Contacts/Contacts"
 import Shop from "components/Shop/Shop"
+import ProductPage from "components/ProductPage/ProductPage";
+import Card from "../Card/Card";
 
 const router = createBrowserRouter([
     {
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
             {
                 path:'/shop',
                 element: <Shop/>
+            },
+            {
+                path:'/shop/:productId',
+                element: <ProductPage/>
+            },
+            {
+                path: '/card',
+                element: <Card/>
             }
 
         ]
