@@ -9,7 +9,7 @@ import AboutUs from "components/AboutUs/AboutUs"
 import Contacts from "components/Contacts/Contacts"
 import Shop from "components/Shop/Shop"
 import ProductPage from "components/ProductPage/ProductPage";
-import Card from "../Card/Card";
+import Cart from "components/Cart/Cart";
 
 const router = createBrowserRouter([
     {
@@ -37,8 +37,8 @@ const router = createBrowserRouter([
                 element: <ProductPage/>
             },
             {
-                path: '/card',
-                element: <Card/>
+                path: '/cart',
+                element: <Cart/>
             }
 
         ]

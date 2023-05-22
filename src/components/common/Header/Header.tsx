@@ -5,6 +5,7 @@ import Navigation from "components/common/Navigation/Navigation"
 import Logo from "components/common/Logo/Logo"
 import {useAppDispatch } from "hooks"
 import {toggleActive} from "store/ModalSlice"
+import {Link} from "react-router-dom";
 
 
 const Header = () => {
@@ -19,9 +20,9 @@ const Header = () => {
                         <button className={s.phone} onClick={() => dispatch(toggleActive())}/>
                         <a href="tel:+78142332211">+7(814)-233-22-11</a>
                     </div>
-                    <div>
+                    <Link to="/cart">
                         <img src={card} alt="card logo"/>
-                    </div>
+                    </Link>
                 </div>
             </header>
         </>
