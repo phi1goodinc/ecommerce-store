@@ -2,7 +2,7 @@ import React from "react"
 import s from "./NewCollection.module.css"
 import {useAppSelector} from "hooks"
 import Product from "components/common/Product/Product"
-import {Link} from "react-router-dom";
+import ButtonWithBorder from "../../common/ButtonWithBorder/ButtonWithBorder";
 
 const NewCollection = () => {
 
@@ -18,7 +18,7 @@ const NewCollection = () => {
                     }
                 </div>
                 <div className={s.btn_container}>
-                    <Link to='/shop' className={s.open_btn}>Открыть магазин</Link>
+                    <ButtonWithBorder url={'/shop'}>Открыть магазин</ButtonWithBorder>
                 </div>
 
             </div>

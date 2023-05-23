@@ -1,10 +1,10 @@
-import React from 'react';
-import SyncSlider from '../../../components/utils/Slider/Slider.jsx';
-import s from './TopScreen.module.css';
-import arrowDown from '../../assets/images/arrow-down.svg'
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import modelMain from '../../assets/images/topScreen/model-main.jpg';
-import {Link} from "react-router-dom";
+import React from "react"
+import SyncSlider from "components/utils/Slider/Slider.jsx"
+import s from "./TopScreen.module.css"
+import arrowDown from "components/assets/images/arrow-down.svg"
+import AnchorLink from "react-anchor-link-smooth-scroll"
+import modelMain from "components/assets/images/topScreen/model-main.jpg"
+import ButtonBlue from "components/common/ButtonBlue/ButtonBlue"
 
 const TopScreen = () => {
     return (
@@ -18,9 +18,7 @@ const TopScreen = () => {
                         <AnchorLink className={s.arrow_btn} href="#newcollection">
                             <img src={arrowDown} alt="button to new collection section"/>
                         </AnchorLink>
-                        <Link to={`/shop`} preventScrollReset={false} className={`btn_blue`}>
-                            Открыть магазин
-                        </Link>
+                        <ButtonBlue url={"/shop"}>Открыть магазин</ButtonBlue>
                     </div>
                 </section>
                 <section className={s.right}>
